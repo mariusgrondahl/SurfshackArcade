@@ -6,7 +6,6 @@ class Game {
   }
 };
 
-
 // Surfer Class
 class Surfer {
   constructor (x, y) {
