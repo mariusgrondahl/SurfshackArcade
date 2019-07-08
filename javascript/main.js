@@ -2,9 +2,7 @@
 var gameBoard = new Game (400, 600);
 var surfer = new Surfer (200, 500);
 var shark = new Shark (50, 0);
-var shark1 = new Shark (75, 0);
 
-let intervalSpeed = 10;
 
 // All the interaction
 let gameContainer = document.getElementById("game-container");
@@ -19,6 +17,11 @@ let message = document.getElementById("message");
 gameContainer.style.width = gameBoard.gamewidth + "px";
 gameContainer.style.height = gameBoard.gameheight + "px";
 
+surferContainer.style.width = surfer.width + "px";
+surferContainer.style.height = surfer.heigth + "px";
+
+sharkContainer.style.height = shark.heigth + "px";
+sharkContainer.style.width = shark.width + "px";
 
 // Her`s our Australian Surferboy
 function getSurfer() {
@@ -35,7 +38,6 @@ function getSharks() {
     setInterval(() => {
         sharkContainer.style.marginTop = -shark.y + "px";
         sharkContainer.style.marginLeft = shark.x + "px";
-        shark.collision();
         }, intervalSpeed );
 }
 
