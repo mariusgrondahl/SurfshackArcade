@@ -28,16 +28,21 @@ h1, h2, h3, h4, h5, h6 {
   background: url(../img/wood.jpg) no-repeat center center; 
   background-size: cover;
   box-shadow: 0px 0px 13px 2px rgba(0,0,0,0.35);
+  padding: 2rem;
+}
+
+#water{
+  background: url(../img/beach.png) no-repeat center center; 
 }
 
 #game-container{
-  margin: 2rem;
-	background: linear-gradient(-45deg, rgb(230, 246, 255),  rgb(11, 128, 191),  rgb(4, 59, 89));
+	background: linear-gradient(-45deg, rgb(230, 246, 255, 0.9),  rgb(11, 128, 191, 0.8),  rgb(4, 59, 89, 1));
 	background-size: 400% 400%;
 	animation: Gradient 10s ease infinite;
   box-shadow: inset 0px 0px 5px 0px rgba(0,0,0,0.75);
   border-radius: 3px;
 }
+
 
 
 #surfer{
@@ -52,9 +57,11 @@ h1, h2, h3, h4, h5, h6 {
 #shark{
   position: relative;
   display: inline-block;
+  background: url(../img/shark.png) no-repeat; 
+  background-size: 25px;
+  background-position: top center;
   width: 25px;
-  height: 40px;
-  background: #fff;
+  height: 70px;
 }
 
 .sharks{

@@ -73,14 +73,16 @@ class Shark {
 
     move() {
       this.interval = setInterval(() => {
-        this.y = this.y - 2;
+        this.y = this.y - getRandom(2,4);
         this.movingState = 1;
         this.collision();
-        if (this.y < -560 ){
+        if (this.y < -gameBoard.gameheight + 40 ){
           this.reset();
           this.x = this.x + 100;
           this.move();
-        } 
+        } else if (this.y < -560 || this.x > gameBoard.gamewidth - 25) {
+          this.x = 0;
+        }
       }, intervalSpeed);
     }
 

@@ -43,12 +43,12 @@ function getSharks() {
 getSharks();
 
 
-/////////////// Lets work with sharkclass
-
 // Here is our random number
-function getRandomArbitrary(min, max) {
+function getRandom(min, max) {
     return Math.random() * (max - min) + min;
 }
+
+
 
 
 
