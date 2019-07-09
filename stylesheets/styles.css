@@ -33,6 +33,7 @@ h1, h2, h3, h4, h5, h6 {
 
 #water{
   background: url(../img/beach.png) no-repeat center center; 
+  z-index: 9;
 }
 
 #game-container{
@@ -41,6 +42,7 @@ h1, h2, h3, h4, h5, h6 {
 	animation: Gradient 10s ease infinite;
   box-shadow: inset 0px 0px 5px 0px rgba(0,0,0,0.75);
   border-radius: 3px;
+  z-index: 5;
 }
 
 
@@ -50,11 +52,14 @@ h1, h2, h3, h4, h5, h6 {
   background: url(../img/surboard.png) no-repeat; 
   background-size: 20px;
   display: inline-block;
+  margin-top: 500px;
+  margin-left: 200px;
   width: 25px;
   height: 70px;
 }
 
-#shark{
+
+.sharks{
   position: relative;
   display: inline-block;
   background: url(../img/shark.png) no-repeat; 
@@ -62,14 +67,7 @@ h1, h2, h3, h4, h5, h6 {
   background-position: top center;
   width: 25px;
   height: 70px;
-}
-
-.sharks{
-  position: relative;
-  display: inline-block;
-  width: 25px;
-  height: 40px;
-  background: #fff;
+  animation: rotating 1s linear infinite;
 }
 
 #game-title{
@@ -120,6 +118,23 @@ h1, h2, h3, h4, h5, h6 {
 
 .show{
   display: inline;
+}
+
+@keyframes rotating {
+  0% {
+    transform: rotate(0deg);
+  }
+  33% {
+    transform: rotate(-4deg);
+  }
+
+  66% {
+    transform: rotate(4deg);
+  }
+
+  100% {
+    transform: rotate(0deg);
+  }
 }
 
 
