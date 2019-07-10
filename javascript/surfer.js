@@ -4,7 +4,7 @@ class Surfer {
   constructor (x, y) {
       this.x = x;
       this.y = y;
-      this.width = 25;
+      this.width = 20;
       this.height = 70;
   }
 

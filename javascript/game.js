@@ -4,31 +4,41 @@ class Game {
     this.gamewidth = width;
     this.gameheight = height;
     this.interval = 0;
-    
-  }
-
-  message() {
-    message.innerHTML = "Ahhhhh, you drowned!!!";
-    gameMessage.style.display = "flex";
-    surfer.reset()
+    this.score = 0;
   }
 
   startGame() {
     this.interval = setInterval(() => {
       // Activate controls
-      shark.move();
-      shark1.move();
-      shark2.move();
+      for(let i = 0; i < sharkInstances.length; i++ ) {
+            sharkInstances[i].move();
+      }
+      // update scoreboard
+      score.innerHTML = this.score;
       // Watch the surfsboards X position
       surferContainer.style.marginLeft = surfer.x + "px";
       }, 10 )
   }
 
+    message() {
+    message.innerHTML = "Ahhhhh, you drowned!!!";
+    gameMessage.style.display = "flex";
+    surfer.reset()
+  }
+
+  reset() {
+    this.interval = clearInterval(this.interval);
+    this.message();
+    for(let i = 0; i < sharkInstances.length; i++ ) {
+      sharkInstances[i].reset();
+    }
+  }
 
   controls () {
     document.addEventListener("keydown", function (e) {
       switch (e.keyCode) {
         case 13:
+          gameBoard.reset();
           gameMessage.style.display = "none";
           gameBoard.startGame();
           break;
