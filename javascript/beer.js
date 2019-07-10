@@ -49,6 +49,11 @@ class Beer {
       
     }
 
+    sound() {
+      var sound = new Audio("./sounds/dead.wav");
+      sound.play();
+    }
+
     // Detects Collision with other sharks
     points() {
       let surfX1 = surfer.x;
@@ -60,7 +65,7 @@ class Beer {
           this.y < surfY2  && this.y + this.height > surfY1) {
           // This will happen to our shark on collision
           gameBoard.score++;
-          animateCSS('#score', 'bounce');
+          this.sound();
 
         }  
     } 

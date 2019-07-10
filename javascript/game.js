@@ -23,7 +23,7 @@ class Game {
   }
 
     message() {
-    message.innerHTML = "You where killed by Sharky McSharkFace";
+    message.innerHTML = "You where killed" + "</br>" + "by the sharks!!!";
     gameMessage.style.display = "flex";
     surfer.reset()
   }
@@ -34,6 +34,14 @@ class Game {
     for(let i = 0; i < sharkInstances.length; i++ ) {
       sharkInstances[i].reset();
     }
+  }
+
+  playSound (audio) {
+
+  }
+
+  stopSound (audio) {
+    
   }
 
   controls () {

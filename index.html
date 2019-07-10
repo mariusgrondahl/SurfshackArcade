@@ -20,10 +20,7 @@
   </p>
   <p>Press <span class="emphasis">"Enter"</span> to play, and use <span class="emphasis">"Left"</span> and <span class="emphasis">"Right"</span> to escape from sharks.</p>
 </div>
-<div id="wood-container">
-  <div id="scoreboard">
-    <span>Score: </span><span id="score">1</span>
-  </div>
+<div id="wood-container" rel="preload" href="../img/wood.jpg" as="image">
   <div id="water">
   <section id="game-container" class="game-container">
    
@@ -33,6 +30,10 @@
   </section>
   </div>
   
+  <div id="scoreboard">
+    <span>Alcohol-level: </span><span id="score">1</span>
+  </div>
+
 </div>
   <script src="javascript/sharks.js"></script>
   <script src="javascript/beer.js"></script>
@@ -40,6 +41,10 @@
   <script src="javascript/surfer.js"></script>
   <script src="javascript/main.js"></script>
 
+<footer>
+  <div id="preloadssound" rel="preload" href="../sounds/dead.wav" as="audio"></div>
+  <div id="preloadssound" rel="preload" href="../sounds/beerswipe.wav" as="audio"></div>
 
+</footer>
 </body>
 </html>

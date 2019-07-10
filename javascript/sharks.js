@@ -52,6 +52,11 @@ class Shark {
       
     }
 
+    sound() {
+      var sound = new Audio("./sounds/dead.wav");
+      sound.play();
+    }
+
     // Detects Collision with other sharks
     collision() {
       let surfX1 = surfer.x;
@@ -64,6 +69,7 @@ class Shark {
           // This will happen to our shark on collision
           gameBoard.reset();
           surfer.reset();
+          this.sound();
         }  
     } 
 }
