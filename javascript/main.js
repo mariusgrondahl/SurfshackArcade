@@ -9,6 +9,8 @@ var shark3 = new Shark (100, 0);
 var shark4 = new Shark (200, 0);
 var shark5 = new Shark (225, 0);
 
+var beer1 = new Beer (200, 0);
+
 // We need to make this a part of the Game class
 let sharkInstances = [shark, shark1, shark2, shark3, shark4, shark5];
 
@@ -32,4 +34,17 @@ gameContainer.style.width = gameBoard.gamewidth + "px";
 gameContainer.style.height = gameBoard.gameheight + "px";
 
 
+// For animation
+function animateCSS(element, animationName, callback) {
+    const node = document.querySelector(element)
+    node.classList.add('animated', animationName)
 
+    function handleAnimationEnd() {
+        node.classList.remove('animated', animationName)
+        node.removeEventListener('animationend', handleAnimationEnd)
+
+        if (typeof callback === 'function') callback()
+    }
+
+    node.addEventListener('animationend', handleAnimationEnd)
+}

@@ -12,16 +12,18 @@ class Game {
       // Activate controls
       for(let i = 0; i < sharkInstances.length; i++ ) {
             sharkInstances[i].move();
+            beer1.move();
       }
       // update scoreboard
       score.innerHTML = this.score;
+      score.classList.add("animated", "shake");
       // Watch the surfsboards X position
       surferContainer.style.marginLeft = surfer.x + "px";
       }, 10 )
   }
 
     message() {
-    message.innerHTML = "Ahhhhh, you drowned!!!";
+    message.innerHTML = "You where killed by Sharky McSharkFace";
     gameMessage.style.display = "flex";
     surfer.reset()
   }

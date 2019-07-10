@@ -33,12 +33,15 @@ h1, h2, h3, h4, h5, h6 {
 
 #scoreboard{
   position: fixed;
-  background: #2d2d2d
-  padding: .3rem;
+  background: #2d2d2d;
+  padding: .5rem;
   color: #fff;
   z-index: 99;
-  left: 20px;
-  font-size: 1.5rem;
+  width: 150px;
+  text-align: center;
+  left: 50%;
+  bottom: 10px;
+  font-size: 1.8rem;
 }
 
 .score{
@@ -84,6 +87,20 @@ h1, h2, h3, h4, h5, h6 {
   /* animation: rotating 1s linear infinite; */
   position: absolute;
 }
+
+.beer{
+  display: inline-block;
+  background: url(../img/beer.png) no-repeat; 
+  background-size: 25px;
+  background-position: top center;
+  width: 25px;
+  height: 35px;
+  animation: fadein 0.5s;
+  -webkit-animation: fadeIn 0.5s;
+  /* animation: rotating 1s linear infinite; */
+  position: absolute;
+}
+
 
 #game-title{
   position: relative;
