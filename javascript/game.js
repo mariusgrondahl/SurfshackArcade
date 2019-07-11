@@ -5,6 +5,7 @@ class Game {
     this.gameheight = height;
     this.interval = 0;
     this.score = 0;
+    this.highScore = [];
   }
 
   startGame() {
@@ -16,7 +17,6 @@ class Game {
       }
       // update scoreboard
       score.innerHTML = this.score;
-      score.classList.add("animated", "shake");
       // Watch the surfsboards X position
       surferContainer.style.marginLeft = surfer.x + "px";
       }, 10 )
@@ -29,19 +29,14 @@ class Game {
   }
 
   reset() {
+    this.highScore.push(this.score + " Points");
+    this.score = 0;
+
     this.interval = clearInterval(this.interval);
     this.message();
     for(let i = 0; i < sharkInstances.length; i++ ) {
       sharkInstances[i].reset();
     }
-  }
-
-  playSound (audio) {
-
-  }
-
-  stopSound (audio) {
-    
   }
 
   controls () {

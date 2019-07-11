@@ -49,7 +49,6 @@ class Shark {
       // These are all the alternate startingpositions so tha we place the sharks according to the surfboard
       let startingPosistions = [0, 25, 50, 75, 100, 125, 150, 175, 200, 225, 250, 275, 300, 325, 350, 375]
       this.x = startingPosistions[this.getRandom(0,16)] ;
-      
     }
 
     sound() {
@@ -69,7 +68,7 @@ class Shark {
           // This will happen to our shark on collision
           gameBoard.reset();
           surfer.reset();
-          this.sound();
+          this.sound();    
         }  
     } 
 }

@@ -18,7 +18,7 @@ class Surfer {
   right() {
     this.x = this.x +25;
     if (this.x > gameBoard.gamewidth) {
-      this.x = gameBoard.gamewidth - this.width -25;
+      this.x = gameBoard.gamewidth - this.width;
     }
   }
 

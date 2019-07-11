@@ -7,9 +7,10 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Surfshack Arcade</title>
   <link rel="stylesheet" href="stylesheets/styles.css">
-
+  <link rel="icon" type="image/png"  href="favicon.ico">
 </head>
 <body>
+
 <h2 id="game-title" class="animated rubberBand">Surfshack <span id="yellow">Arcade</span></h2>
 <div id="game-message" class="">
   <h1 id="message">Lets play</h1>
@@ -20,9 +21,21 @@
   </p>
   <p>Press <span class="emphasis">"Enter"</span> to play, and use <span class="emphasis">"Left"</span> and <span class="emphasis">"Right"</span> to escape from sharks.</p>
 </div>
+
+
 <div id="wood-container" rel="preload" href="../img/wood.jpg" as="image">
   <div id="water">
   <section id="game-container" class="game-container">
+  <div id="scoreboard">
+    <div class="points">
+      <span>Points: </span><span id="score" class="number">1</span>
+    </div>
+    <div class="highscore">
+        <span>Highscore: </span><span id="score" class="number">200</span>
+    </div>  
+  </div>
+
+
    
     <div id="surfer">   
     </div>
@@ -30,11 +43,10 @@
   </section>
   </div>
   
-  <div id="scoreboard">
-    <span>Alcohol-level: </span><span id="score">1</span>
-  </div>
-
 </div>
+
+
+
   <script src="javascript/sharks.js"></script>
   <script src="javascript/beer.js"></script>
   <script src="javascript/game.js"></script>

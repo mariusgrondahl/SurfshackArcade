@@ -5,7 +5,7 @@
 
 body, html {
   font-family: 'Barlow', helvetica, arial, sans-serif;
-  background: url(../img/dark-wood_small.jpg) no-repeat center center; 
+  background: url(../img/underwater.jpg) no-repeat center center; 
   background-size: cover;
   font-size: 16px;
   height: 100%;
@@ -32,24 +32,30 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #scoreboard{
+  position: absolute;
+  width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
   background: #2d2d2d;
   padding: .5rem .9rem;
   color: #fff;
   z-index: 99;
-  text-align: center;
-  align-self: center;
-  bottom: 10px;
-  font-size: 1.8rem;
+  font-size: 1.2rem;
 }
 
-.score{
+#score{
   font-weight: bold;
   font-family: 'Original Surfer', cursive;
   color: yellow;
+
 }
+
 
 #water{
   background: url(../img/beach.jpg) no-repeat center center; 
+  background-size: cover;
   z-index: 9;
 }
 
@@ -133,7 +139,7 @@ h1, h2, h3, h4, h5, h6 {
   align-items: center;
   animation: fadein 0.2s;
   -webkit-animation: fadeIn 0.2s;
-  z-index: 9;
+  z-index: 999;
 }
 
 #game-message p{

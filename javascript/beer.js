@@ -64,9 +64,9 @@ class Beer {
         if (this.x < surfX2 && this.x + this.width > surfX1 && 
           this.y < surfY2  && this.y + this.height > surfY1) {
           // This will when we get points
+           gameBoard.score += 15;
            this.reset(); 
            this.sound();
-
         }  
     } 
 }
