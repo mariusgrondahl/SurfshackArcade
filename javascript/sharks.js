@@ -53,7 +53,7 @@ class Shark {
     }
 
     sound() {
-      var sound = new Audio("./sounds/dead.wav");
+      var sound = new Audio("./sounds/error.mp3");
       sound.play();
     }
 

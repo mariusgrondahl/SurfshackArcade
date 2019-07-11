@@ -3,7 +3,7 @@ class Beer {
   constructor (x, y) {
       this.x = x;
       this.y = y;
-      this.width = 20;
+      this.width = 25;
       this.height = 35;
 
       // Her we create a shark for each Object made with the Constructor
@@ -50,7 +50,7 @@ class Beer {
     }
 
     sound() {
-      var sound = new Audio("./sounds/dead.wav");
+      var sound = new Audio("./sounds/beerLevel.mp3");
       sound.play();
     }
 
@@ -65,7 +65,8 @@ class Beer {
           this.y < surfY2  && this.y + this.height > surfY1) {
           // This will when we get points
            this.reset(); 
-           
+           this.sound();
+
         }  
     } 
 }

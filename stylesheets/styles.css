@@ -64,8 +64,8 @@ h1, h2, h3, h4, h5, h6 {
 
 #surfer{
   position: absolute;
-  background: url(../img/surboard.png) no-repeat; 
-  background-size: 20px;
+  background: url(../img/surboard.png) center center no-repeat; 
+  background-size: 21px;
   display: inline-block;
   margin-top: 500px;
   margin-left: 200px;
@@ -78,7 +78,7 @@ h1, h2, h3, h4, h5, h6 {
   display: inline-block;
   background: url(../img/shark.png) no-repeat; 
   background-size: 25px;
-  background-position: top center;
+  background-position: center center;
   width: 25px;
   height: 70px;
   animation: fadein 0.5s;
@@ -87,11 +87,17 @@ h1, h2, h3, h4, h5, h6 {
   position: absolute;
 }
 
+.sharks:nth-child(odd) {
+  animation: Sharks 10s;
+  -webkit-animation: Sharks 10s;
+  opacity: 0.5;
+}
+
 .beer{
   display: inline-block;
   background: url(../img/beer.png) no-repeat; 
   background-size: 25px;
-  background-position: top center;
+  background-position: center center;
   width: 25px;
   height: 35px;
   animation: fadein 0.5s;
@@ -178,6 +184,24 @@ h1, h2, h3, h4, h5, h6 {
 
   100% {
     opacity: 1;
+  }
+}
+
+@keyframes Sharks {
+  0% {
+   opacity: 0.5;
+  }
+
+  25% {
+    opacity: 1;
+  }
+
+  75% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0.5;
   }
 }
 
