@@ -13,7 +13,10 @@ class Game {
       // Activate controls
       for(let i = 0; i < sharkInstances.length; i++ ) {
             sharkInstances[i].move();
-            beer1.move();
+      }
+
+      for(let i = 0; i < beerInstances.length; i++ ) {
+        beerInstances[i].move();
       }
       // update scoreboard
       score.innerHTML = this.score;
@@ -22,20 +25,31 @@ class Game {
       }, 10 )
   }
 
-    message() {
-    message.innerHTML = "You where killed" + "</br>" + "by the sharks!!!";
+  message() {
+    message.innerHTML = "You where killed" + "</br>" + "by a shark!!!";
     gameMessage.style.display = "flex";
     surfer.reset()
   }
 
-  reset() {
-    this.highScore.push(this.score + " Points");
+  scoreCount() {
+    // Pushing the latest score to an array on reset
+    this.highScore.push(this.score);
+    // Getting the highest number of Highscoer and displaying it
+    highscoreContainer.innerHTML = Math.max(this.highScore);
+    // Reseting the score to zero on reset
     this.score = 0;
+  }
 
+  reset() {
+    this.scoreCount();
     this.interval = clearInterval(this.interval);
     this.message();
     for(let i = 0; i < sharkInstances.length; i++ ) {
       sharkInstances[i].reset();
+    }
+
+    for(let i = 0; i < beerInstances.length; i++ ) {
+      beerInstances[i].reset();
     }
   }
 

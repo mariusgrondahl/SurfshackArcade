@@ -101,7 +101,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .beer{
   display: inline-block;
-  background: url(../img/beer.png) no-repeat; 
+  background-image: url("../img/beer.png");
   background-size: 25px;
   background-position: center center;
   width: 25px;

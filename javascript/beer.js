@@ -1,15 +1,18 @@
 // Lets create a shark
 class Beer {
-  constructor (x, y) {
+  constructor (x, y, image) {
       this.x = x;
       this.y = y;
       this.width = 25;
       this.height = 35;
+      this.speed = this.getRandom(0,1.5)
+      this.image = image;
 
       // Her we create a shark for each Object made with the Constructor
       var div = document.createElement("div");
       div.style.width = this.width + "px";
       div.style.height = this.heigth + "px";
+      div.style.backgroundImage = this.image;
       div.className = "beer";
       document.getElementById("game-container").appendChild(div);
       this.domRef = div;
@@ -23,7 +26,7 @@ class Beer {
     // Moving and placing the Beer
     move() {
         //adding vertical speed to Beer
-        this.y += 0.5;
+        this.y += this.speed
         // Check if beers is out of bounds bottom and left/right
 
         if (this.y > gameBoard.gameheight - 70) {
@@ -42,7 +45,7 @@ class Beer {
     // Resets the Beer
     reset() {
       this.y = 0;   
-      this.speed += 1;  
+      this.speed = this.getRandom(1,4)  
       // These are all the alternate startingpositions so tha we place the sharks according to the surfboard
       let startingPosistions = [0, 25, 50, 75, 100, 125, 150, 175, 200, 225, 250, 275, 300, 325, 350, 375]
       this.x = startingPosistions[this.getRandom(0,16)] ;
@@ -64,7 +67,12 @@ class Beer {
         if (this.x < surfX2 && this.x + this.width > surfX1 && 
           this.y < surfY2  && this.y + this.height > surfY1) {
           // This will when we get points
-           gameBoard.score += 15;
+          if (this.image === "url('./img/beerx2.png')" ){
+            gameBoard.score += 30;
+          } else {
+            gameBoard.score += 15;
+          }
+           
            this.reset(); 
            this.sound();
         }  
