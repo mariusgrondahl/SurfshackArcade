@@ -20,16 +20,16 @@ var shark13 = new Shark (225, 0);
 // We need to make this a part of the Game class
 let sharkInstances = [shark, shark1, shark2, shark3, shark4, shark5, shark6, shark7, shark8, shark9,shark10, shark11, shark12, shark13];
 
-var beer1 = new Beer (200, 0, "url('./img/beer.png')" );
-var beer2 = new Beer (300, 0, "url('./img/drink.png')" );
-var beer3 = new Beer (100, 0, "url('./img/beerx2.png')" );
-var beer4 = new Beer (35, 0, "url('./img/meat.png')" );
-var beer5 = new Beer (35, 0, "url('./img/taco.png')" );
-var beer6 = new Beer (35, 0, "url('./img/taco.png')" );
-var beer7 = new Beer (35, 0, "url('./img/taco.png')" );
+var reward1 = new Reward (200, 0, "url('./img/beer.png')" );
+var reward2 = new Reward (300, 0, "url('./img/drink.png')" );
+var reward3 = new Reward (100, 0, "url('./img/beerx2.png')" );
+var reward4 = new Reward (35, 0, "url('./img/meat.png')" );
+var reward5 = new Reward (35, 0, "url('./img/taco.png')" );
+var reward6 = new Reward (35, 0, "url('./img/drinkx2.png')" );
+var reward7 = new Reward (35, 0, "url('./img/taco.png')" );
 
 // We need to make this a part of the Game class
-let beerInstances = [beer1, beer2, beer3, beer4, beer5, beer6, beer7];
+let rewardInstances = [reward1, reward2, reward3, reward4, reward5, reward6, reward7];
 
 gameBoard.controls();
 

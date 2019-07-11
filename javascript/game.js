@@ -15,8 +15,8 @@ class Game {
             sharkInstances[i].move();
       }
 
-      for(let i = 0; i < beerInstances.length; i++ ) {
-        beerInstances[i].move();
+      for(let i = 0; i < rewardInstances.length; i++ ) {
+        rewardInstances[i].move();
       }
       // update scoreboard
       score.innerHTML = this.score;
@@ -48,8 +48,8 @@ class Game {
       sharkInstances[i].reset();
     }
 
-    for(let i = 0; i < beerInstances.length; i++ ) {
-      beerInstances[i].reset();
+    for(let i = 0; i < rewardInstances.length; i++ ) {
+      rewardInstances[i].reset();
     }
   }
 

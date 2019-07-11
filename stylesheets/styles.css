@@ -99,7 +99,7 @@ h1, h2, h3, h4, h5, h6 {
   opacity: 0.5;
 }
 
-.beer{
+.reward{
   display: inline-block;
   background-image: url("../img/beer.png");
   background-size: 25px;
