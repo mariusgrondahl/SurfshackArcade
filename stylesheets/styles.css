@@ -5,7 +5,7 @@
 
 body, html {
   font-family: 'Barlow', helvetica, arial, sans-serif;
-  background: url(../img/dark-wood.jpg) no-repeat center center; 
+  background: url(../img/dark-wood_small.jpg) no-repeat center center; 
   background-size: cover;
   font-size: 16px;
   height: 100%;
@@ -25,7 +25,7 @@ h1, h2, h3, h4, h5, h6 {
 
 #wood-container{
   position: relative;
-  background: url(../img/wood.jpg) no-repeat center center; 
+  background: url(../img/wood_smaller.jpg) no-repeat center center; 
   background-size: cover;
   box-shadow: 0px 0px 13px 2px rgba(0,0,0,0.35);
   padding: 2rem;
@@ -49,7 +49,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #water{
-  background: url(../img/beach.png) no-repeat center center; 
+  background: url(../img/beach.jpg) no-repeat center center; 
   z-index: 9;
 }
 
