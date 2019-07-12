@@ -32,7 +32,6 @@ var reward7 = new Reward (35, 0, "url('./img/taco.png')" );
 let rewardInstances = [reward1, reward2, reward3, reward4, reward5, reward6, reward7];
 
 gameBoard.controls();
-gameBoard.startGame();
 
 // All the DOMmanipulation
 let gameContainer = document.getElementById("game-container");
