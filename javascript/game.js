@@ -27,7 +27,7 @@ class Game {
   }
 
   message() {
-    message.innerHTML = "You where killed" + "</br>" + "by a shark!!!";
+    message.innerHTML = "You were killed" + "</br>" + "by a shark!!!";
     gameMessage.style.display = "flex";
     surfer.reset()
   }
