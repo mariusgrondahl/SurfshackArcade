@@ -29,7 +29,7 @@ class Reward {
         this.y += this.speed
         // Check if Reward is out of bounds bottom and left/right
 
-        if (this.y > gameBoard.gameheight - 70) {
+        if (this.y > gameBoard.gameheight + 100) {
           this.reset();     
         } else if ( this.x > gameBoard.gamewidth - this.width) {
           this.reset();
@@ -44,7 +44,8 @@ class Reward {
 
     // Resets the Rewards
     reset() {
-      this.y = 0;   
+      this.y = 0;
+
       this.speed = this.getRandom(1,4)  
       // These are all the alternate startingpositions so tha we place the Points according to the surfboard
       let startingPosistions = [0, 25, 50, 75, 100, 125, 150, 175, 200, 225, 250, 275, 300, 325, 350, 375]

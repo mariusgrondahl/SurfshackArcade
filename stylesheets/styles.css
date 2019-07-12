@@ -31,6 +31,10 @@ h1, h2, h3, h4, h5, h6 {
   padding: 2rem;
 }
 
+.clip{
+  clip-path: inset(0px 0px 0px 0px);
+}
+
 #scoreboard{
   position: absolute;
   width: 100%;
