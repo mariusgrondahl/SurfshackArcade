@@ -45,12 +45,24 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 1.2rem;
 }
 
-#score{
+#score, #highscore{
+  position: relative;
   font-weight: bold;
   font-family: 'Original Surfer', cursive;
-  color: yellow;
-
+  color: gold;
 }
+
+/* #highscore:before{
+  position: relative;
+  right: 116px;
+  top: -21px;
+  content: "";
+  display: inline;
+  background: url(../img/trophy.png) center center no-repeat; 
+  background-size: 21px;
+  width: 25px;
+  height: 70px;
+} */
 
 
 #water{
@@ -89,7 +101,7 @@ h1, h2, h3, h4, h5, h6 {
   height: 70px;
   animation: fadein 0.5s;
   -webkit-animation: fadeIn 0.5s;
-  /* animation: rotating 1s linear infinite; */
+  animation: rotating 1s linear infinite;
   position: absolute;
 }
 

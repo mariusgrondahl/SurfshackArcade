@@ -9,6 +9,7 @@ class Game {
   }
 
   startGame() {
+    this.score = 0;
     this.interval = setInterval(() => {
       // Activate controls
       for(let i = 0; i < sharkInstances.length; i++ ) {
@@ -31,17 +32,15 @@ class Game {
     surfer.reset()
   }
 
-  scoreCount() {
+  highscore() {
     // Pushing the latest score to an array on reset
     this.highScore.push(this.score);
     // Getting the highest number of Highscoer and displaying it
-    highscoreContainer.innerHTML = Math.max(this.highScore);
+    highscoreContainer.innerHTML = Math.max(...this.highScore);
     // Reseting the score to zero on reset
-    this.score = 0;
   }
 
-  reset() {
-    this.scoreCount();
+  reset () {
     this.interval = clearInterval(this.interval);
     this.message();
     for(let i = 0; i < sharkInstances.length; i++ ) {

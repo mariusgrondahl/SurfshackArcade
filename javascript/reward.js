@@ -13,7 +13,7 @@ class Reward {
       div.style.width = this.width + "px";
       div.style.height = this.heigth + "px";
       div.style.backgroundImage = this.image;
-      div.className = "reward";
+      div.className = "reward pointtext";
       document.getElementById("game-container").appendChild(div);
       this.domRef = div;
     }
@@ -71,8 +71,8 @@ class Reward {
             gameBoard.score += 30;
           } else {
             gameBoard.score += 15;
+            animateCSS('.pointtext', 'bounce')
           }
-           
            this.reset(); 
            this.sound();
         }  

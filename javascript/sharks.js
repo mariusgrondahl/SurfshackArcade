@@ -66,6 +66,7 @@ class Shark {
         if (this.x < surfX2 && this.x + this.width > surfX1 && 
           this.y < surfY2  && this.y + this.height > surfY1) {
           // This will happen to our shark on collision
+          gameBoard.highscore();
           gameBoard.reset();
           surfer.reset();
           this.sound();    
