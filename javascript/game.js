@@ -23,6 +23,7 @@ class Game {
       score.innerHTML = this.score;
       // Watch the surfsboards X position
       surferContainer.style.marginLeft = surfer.x + "px";
+      surferContainer.style.marginTop = surfer.y + "px";
       }, 10 )
   }
 
@@ -66,6 +67,12 @@ class Game {
         case 39:
           surfer.right();
           break;
+        case 38:
+          surfer.up();
+          break;
+          case 40:
+              surfer.down();
+              break;
         default:
           console.log("this is not a key");
       }

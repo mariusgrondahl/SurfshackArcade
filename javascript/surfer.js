@@ -22,6 +22,20 @@ class Surfer {
     }
   }
 
+  up() {
+    this.y = this.y - 25;
+    if (this.y < 50) {
+      this.y = 50;
+    }
+  }
+
+  down() {
+    this.y = this.y + 25;
+    if (this.y > 500) {
+      this.y = 500;
+    }
+  }
+
   reset () {
     this.x = 180;
     this.y = 500;

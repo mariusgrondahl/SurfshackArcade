@@ -27,7 +27,7 @@ class Shark {
         this.y = this.y + this.speed;
         // Check if sharks is out of bounds bottom and left/right
 
-        if (this.y > gameBoard.gameheight + 100) {
+        if (this.y > gameBoard.gameheight + 50) {
           this.reset();     
         } else if ( this.x > gameBoard.gamewidth - this.width) {
           this.reset();
@@ -44,7 +44,7 @@ class Shark {
     // Resets the sharks
     reset() {
       message.classList.add("animated", "shake");
-      this.y = - 60;   
+      this.y = - 20;   
       this.speed = this.getRandom(1,4)   
       // These are all the alternate startingpositions so tha we place the sharks according to the surfboard
       let startingPosistions = [0, 25, 50, 75, 100, 125, 150, 175, 200, 225, 250, 275, 300, 325, 350, 375]
