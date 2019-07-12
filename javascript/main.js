@@ -26,7 +26,7 @@ var reward3 = new Reward (100, 0, "url('./img/beerx2.png')" );
 var reward4 = new Reward (35, 0, "url('./img/meat.png')" );
 var reward5 = new Reward (35, 0, "url('./img/taco.png')" );
 var reward6 = new Reward (35, 0, "url('./img/drinkx2.png')" );
-var reward7 = new Reward (35, 0, "url('./img/taco.png')" );
+var reward7 = new Reward (35, 0, "url('./img/mushroomx4.png')" );
 
 // We need to make this a part of the Game class
 let rewardInstances = [reward1, reward2, reward3, reward4, reward5, reward6, reward7];

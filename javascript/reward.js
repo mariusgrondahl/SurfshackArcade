@@ -69,6 +69,8 @@ class Reward {
           // This will when we get points
           if (this.image === "url('./img/beerx2.png')" || this.image === "url('./img/drinkx2.png')" ){
             gameBoard.score += 30;
+          } else if (this.image === "url('./img/mushroomx4.png')") {
+            gameBoard.score += 100;
           } else {
             gameBoard.score += 15;
             animateCSS('.pointtext', 'bounce')
