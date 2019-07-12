@@ -31,6 +31,8 @@ h1, h2, h3, h4, h5, h6 {
   padding: 2rem;
 }
 
+
+/* Here we create a clipping mask so that Sharks and Rewards kan go outside the box  */
 .clip{
   clip-path: inset(0px 0px 0px 0px);
 }
