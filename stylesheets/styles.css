@@ -187,6 +187,11 @@ h1, h2, h3, h4, h5, h6 {
   display: block;
 }
 
+.copyright, .copyright a{
+  color: #fff;
+  text-decoration: none;
+}
+
 
 @keyframes rotating {
   0% {
