@@ -1,62 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
 
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Surfshack Arcade</title>
-  <link rel="stylesheet" href="stylesheets/styles.css">
-  <link rel="icon" type="image/png"  href="favicon.ico">
-</head>
-<body>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Surfshack Arcade</title>
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="icon" type="image/png" href="favicon.ico">
+  </head>
+  <body>
 
-<h2 id="game-title" class="animated rubberBand">Surfshack <span id="yellow">Arcade</span></h2>
-<div id="game-message" class="">
-  <h1 id="message">Lets play</h1>
-  <p>Hurry! Your friends are waiting off the coast. 
-    They want to party, by they need as much booz as possible. Gather all the food and drinks you can.
-    <strong>Be aware of sharks!!!</strong>
-  </p>
-  <p>Press <span class="emphasis">"ENTER"</span> to play, and use <span class="emphasis">"left"</span>, <span class="emphasis">"right"</span>, <span class="emphasis">"up"</span> and <span class="emphasis">"down"</span> to escape from sharks.</p>
-</div>
-
-
-<div id="wood-container" rel="preload" href="../img/wood.jpg" as="image">
-  <div id="water" class="clip">
-  <section id="game-container" class="game-container">
-  <div id="scoreboard">
-    <div class="points">
-      <span>Points: </span><span id="score">0</span>
-    </div>
-    <div class="highscore">
-        <span>Haiscore: </span><span id="highscore">0</span>
-    </div>  
-  </div>
-
-
-   
-    <div id="surfer">   
+    <h2 id="game-title" class="animated rubberBand">Surfshack <span id="yellow">Arcade</span></h2>
+    <div id="game-message" class="">
+      <h1 id="message">Lets play</h1>
+      <p>Hurry! Your friends are waiting off the coast.
+        They want to party, but they need as much booz as possible. Gather all
+        the food and drinks you can.
+        <strong>Be aware of sharks!!!</strong>
+      </p>
+      <p>Press <span class="emphasis">"ENTER"</span> to play, and use <span
+          class="emphasis">"left"</span>, <span class="emphasis">"right"</span>,
+        <span class="emphasis">"up"</span> and <span class="emphasis">"down"</span>
+        to escape from sharks.</p>
     </div>
 
-  </section>
-  </div>
 
-</div>
-<p class="copyright">By <a href="https://github.com/mariusgrondahl" target="_blank">Marius Grøndahl</a></p>
-<div id="badge">
-<img src="https://forthebadge.com/images/badges/uses-js.svg" width="80">
-</div>
+    <div id="wood-container" rel="preload" href="../img/wood.jpg" as="image">
+      <div id="water" class="clip">
+        <section id="game-container" class="game-container">
+          <div id="scoreboard">
+            <div class="points">
+              <span>Points: </span><span id="score">0</span>
+            </div>
+            <div class="highscore">
+              <span>Haiscore: </span><span id="highscore">0</span>
+            </div>
+          </div>
 
 
 
-  <script src="javascript/sharks.js"></script>
-  <script src="javascript/reward.js"></script>
-  <script src="javascript/game.js"></script>
-  <script src="javascript/surfer.js"></script>
-  <script src="javascript/main.js"></script>
+          <div id="surfer">
+          </div>
 
-<footer>
-</footer>
-</body>
+        </section>
+      </div>
+
+    </div>
+    <p class="copyright">By <a href="https://github.com/mariusgrondahl"
+        target="_blank">Marius Grøndahl</a></p>
+    <div id="badge">
+      <img src="https://forthebadge.com/images/badges/uses-js.svg" width="80">
+    </div>
+
+
+
+    <script src="javascript/sharks.js"></script>
+    <script src="javascript/reward.js"></script>
+    <script src="javascript/game.js"></script>
+    <script src="javascript/surfer.js"></script>
+    <script src="javascript/main.js"></script>
+
+    <footer>
+    </footer>
+  </body>
 </html>
